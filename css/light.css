@@ -1,0 +1,20 @@
+/* ===== LIGHT THEME ===== */
+:root {
+  --bg: #f8f7f4;
+  --text: #1a1a1a;
+  --text-secondary: #555555;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --nav-bg: #f8f7f4;
+  --footer-text: #888888;
+  --border: #e0ddd6;
+  --input-bg: #ffffff;
+  --cta-bg: #1a1a1a;
+  --cta-text: #f8f7f4;
+  --cta-hover: #333333;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}

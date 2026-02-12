@@ -1,0 +1,20 @@
+/* ===== DARK THEME ===== */
+:root {
+  --bg: #1c1c1e;
+  --text: #f0efe9;
+  --text-secondary: #a0a0a0;
+  --accent: #60a5fa;
+  --accent-hover: #93c5fd;
+  --nav-bg: #1c1c1e;
+  --footer-text: #666666;
+  --border: #333333;
+  --input-bg: #2a2a2c;
+  --cta-bg: #f0efe9;
+  --cta-text: #1c1c1e;
+  --cta-hover: #d4d3cd;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}

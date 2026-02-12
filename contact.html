@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Kinch</title>
+  <meta name="description" content="Get in touch with Kinch. Book a conversation or send a message about AI and data strategy consulting.">
+  <meta property="og:title" content="Contact - Kinch">
+  <meta property="og:description" content="Get in touch with Kinch. Book a conversation or send a message.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/light.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-brand">Kinch</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="engagements.html">Engagements</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- Page Header -->
+    <section class="hero">
+      <div class="container">
+        <h1>Get in touch</h1>
+      </div>
+    </section>
+
+    <!-- Contact Grid -->
+    <section class="section section-border">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Calendly -->
+          <div class="contact-section">
+            <h2>Book a conversation</h2>
+            <p>Pick a time that works and we'll talk about what you're working on.</p>
+            <a href="#" class="calendly-link" target="_blank" rel="noopener">Schedule a call</a>
+            <!-- Replace href="#" with your Calendly URL, e.g.: -->
+            <!-- https://calendly.com/your-username/30min -->
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-section">
+            <h2>Send a message</h2>
+            <form id="contact-form" action="#" method="POST">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+                <div class="field-error" id="name-error">Please enter your name.</div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                <div class="field-error" id="email-error">Please enter a valid email address.</div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="What are you working on?"></textarea>
+                <div class="field-error" id="message-error">Please enter a message.</div>
+              </div>
+
+              <!-- Honeypot - invisible to humans -->
+              <div class="visually-hidden" aria-hidden="true">
+                <label for="website">Website</label>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+              </div>
+
+              <button type="submit" class="cta-button">Send message</button>
+            </form>
+            <div class="success-message" id="success-message">
+              Thanks for reaching out. I'll be in touch soon.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <span class="footer-text">&copy; 2025 Kinch</span>
+      <div class="footer-links">
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
