@@ -53,9 +53,8 @@
 
     if (!valid) return;
 
-    // If valid, submit the form
-    // For now, show success message (replace with actual form submission)
-    // When using Netlify Forms or Formspree, uncomment: form.submit();
+    // Submit to Formspree
+    form.submit();
     showSuccess();
   });
 
