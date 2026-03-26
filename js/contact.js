@@ -53,9 +53,21 @@
 
     if (!valid) return;
 
-    // Submit to Formspree
-    form.submit();
-    showSuccess();
+    // Submit to Formspree via fetch
+    var data = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(function(response) {
+      if (response.ok) {
+        showSuccess();
+      } else {
+        alert('Something went wrong. Please try again or email paul@kinch.ai directly.');
+      }
+    }).catch(function() {
+      alert('Something went wrong. Please try again or email paul@kinch.ai directly.');
+    });
   });
 
   function showError(id) {
