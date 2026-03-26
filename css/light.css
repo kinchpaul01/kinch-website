@@ -1,6 +1,7 @@
 /* ===== LIGHT THEME ===== */
 :root {
   --bg: #f8f7f4;
+  --bg-alt: #f0efe9;
   --text: #1a1a1a;
   --text-secondary: #555555;
   --accent: #2563eb;

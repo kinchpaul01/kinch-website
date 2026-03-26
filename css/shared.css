@@ -107,7 +107,7 @@ li {
 }
 
 .nav-brand img {
-  height: 36px;
+  height: 80px;
   width: auto;
 }
 
@@ -169,15 +169,16 @@ li {
   padding: var(--space-xxl) 0;
 }
 
-.section-border {
-  border-top: 1px solid var(--border);
+.section-alt {
+  background-color: var(--bg-alt);
 }
 
 /* ===== SERVICES GRID ===== */
 .services-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-lg);
+  row-gap: var(--space-xl);
+  column-gap: var(--space-xxl);
   margin-top: var(--space-md);
 }
 
@@ -275,10 +276,11 @@ li {
 }
 
 .headshot {
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 380px;
   border-radius: 8px;
   object-fit: cover;
+  object-position: center top;
   flex-shrink: 0;
 }
 
@@ -310,7 +312,8 @@ li {
 /* ===== CONTACT PAGE ===== */
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: var(--space-xl);
   gap: var(--space-xl);
   margin-top: var(--space-lg);
 }
@@ -395,6 +398,26 @@ textarea::placeholder {
 }
 
 /* ===== CTA BUTTON ===== */
+
+.text-cta {
+  display: inline-block;
+  padding: 4px 14px;
+  background-color: var(--cta-bg);
+  color: var(--cta-text);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  vertical-align: middle;
+  transition: background-color 0.2s ease;
+}
+
+.text-cta:hover {
+  background-color: var(--cta-hover);
+  color: var(--cta-text);
+}
+
 .cta-button {
   display: inline-block;
   padding: 14px 32px;
@@ -430,7 +453,7 @@ textarea::placeholder {
 /* ===== FOOTER ===== */
 .footer {
   padding: var(--space-lg) 0;
-  border-top: 1px solid var(--border);
+  background-color: var(--bg-alt);
   margin-top: var(--space-xxl);
 }
 
@@ -446,9 +469,10 @@ textarea::placeholder {
 }
 
 .footer-brand {
-  height: 24px;
+  height: 32px;
   width: auto;
   opacity: 0.5;
+  vertical-align: middle;
 }
 
 .footer-links {
@@ -548,8 +572,8 @@ textarea::placeholder {
   }
 
   .headshot {
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 250px;
   }
 
   /* Blog teaser */
